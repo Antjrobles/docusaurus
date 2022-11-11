@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-# Create a Document
+# 4. Create a Document
 
 Documents are **groups of pages** connected through:
 
