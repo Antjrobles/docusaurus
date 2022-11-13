@@ -4,32 +4,30 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'All my notes',
     Svg: require('@site/static/img/notes.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        A collection of notes gathered over the years while learning new technologies. This is where I will track my progress and ideas for the future. Some are good some are bad, but they are all here!
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Get clear and Focus on what matters',
     Svg: require('@site/static/img/coding.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Focus on your docs, and we'll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory. I'll take care of the formatting for you.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Sara',
     Svg: require('@site/static/img/together.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Sara's course agenda. Her digest for the finals and everything in between. Handle with care  🤎. 
       </>
     ),
   },
