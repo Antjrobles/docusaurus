@@ -10,4 +10,7 @@ created: 13-11-2022
 - [CSS](CSS.md)
 - [JAVASCRIPT](#)
 - [SARA](#)
-- [DOCKER](#)
+- [DOCKER](Docker.md)
+- [GIT](GIT.md)
+- [HTML](HTML.md)
+- [KUBERNETES](KUBERNETES.md)

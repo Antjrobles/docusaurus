@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: "Ansible"
+title: "ANSIBLE"
 description: Automation Servers
 created: 08-10-2022 
 tag:

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: "Bash"
+title: "BASH"
 description: Some Commands and tips for Bash
 created: 16-06-2002
 tag:
