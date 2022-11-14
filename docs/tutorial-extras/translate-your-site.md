@@ -1,88 +1,34 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Translate your site
+# The DOM
+# DOM
 
-Let's translate `docs/intro.md` to French.
+## LINKS TO COURSES AND TUTORIALS
+[The DOM Manipulation with Javascritpt (FreeCodeCamp))](https://www.youtube.com/watch?v=5fb2aPlgoys&t=1186s)
 
-## Configure i18n
+## DOM Manipulation
+- 4 ways to get the HTML elements
+   - `document.getElementById('id-from-html');` 
+   - `document.getElementByClassName('class-from-html');`
+   - `document.getElementByTagName('li');` - Examples: `li`, `ul` ...
+   - `document.querySelector('div');` - Examples: `div`, `span`, ...
+   - `document.querySelectorAll('div');` - Select all the `div` elements
+- Then we can create a `const`:
+    - `const title = document.querySelector('div');`
+## GIVE STYLES (inline)
+- Properties must be in `camelcase`: `fontSize`, not `font-size`, this is only on CSS.
+- `title.style.color = 'red';` - `title` comes form the example above `const`  
+- `title.style.fontSize = '2rem'` 
+-  Inline styling cant be applied to more than one element.  To do it so, we have to list the items y hace un bucle:
+```javascript
+const listItems = document.querySelectorAll('.list-items')
+listItems.style.fontsSize = '2rem'; //This wont style all the elements in the 'list-items' elements. Had to create a loop
 
-Modify `docusaurus.config.js` to add support for the `fr` locale:
-
-```js title="docusaurus.config.js"
-module.exports = {
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-  },
+for (i = 0; i < listItems.length; i++) {
+  listItems[i].style.fontsSize = '2rem'
 };
 ```
 
-## Translate a doc
 
-Copy the `docs/intro.md` file to the `i18n/fr` folder:
-
-```bash
-mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
-
-cp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md
-```
-
-Translate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` in French.
-
-## Start your localized site
-
-Start your site on the French locale:
-
-```bash
-npm run start -- --locale fr
-```
-
-Your localized site is accessible at [http://localhost:3000/fr/](http://localhost:3000/fr/) and the `Getting Started` page is translated.
-
-:::caution
-
-In development, you can only use one locale at a same time.
-
-:::
-
-## Add a Locale Dropdown
-
-To navigate seamlessly across languages, add a locale dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'localeDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The locale dropdown now appears in your navbar:
-
-![Locale Dropdown](./img/localeDropdown.png)
-
-## Build your localized site
-
-Build your site for a specific locale:
-
-```bash
-npm run build -- --locale fr
-```
-
-Or build your site to include all the locales at once:
-
-```bash
-npm run build
-```

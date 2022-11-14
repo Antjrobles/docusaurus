@@ -68,11 +68,19 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Index',
+            label: 'INDEX',
           },
-          {to: '/blog', label: 'Javascript', position: 'left'},
+          {to: '/docs/category/javascript', label: 'JAVASCRIPT', position: 'left'},
+          {to: '/sara', label: 'SARA', position: 'left'},
+          
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://youtube.com',
+            label: 'Youtube',
+            position: 'right',
+          },
+
+          {
+            href: 'https://github.com/Antjrobles/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
