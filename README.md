@@ -1,3 +1,8 @@
+# SERVER
+- To change local port and default localhot to a custom ip address and different port, run this command in the terminal:
+```sudo npm run serve -- --build --port 8053 --host 192.168.0.11  ```
+
+
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
