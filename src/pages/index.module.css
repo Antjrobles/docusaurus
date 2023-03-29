@@ -3,9 +3,11 @@
  * and scoped locally.
  */
 
+
+
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+  padding: 4rem 0; /* 4rem top and bottom, 0 left and right */
+  text-align: center; 
   position: relative;
   overflow: hidden;
 }

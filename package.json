@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "antjrobles",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -14,10 +14,12 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
+    "@clerk/clerk-react": "^4.12.9",
     "@docusaurus/core": "2.4.0",
     "@docusaurus/preset-classic": "2.4.0",
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.2.1",
+    "dotenv": "^16.0.3",
     "prism-react-renderer": "^1.3.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

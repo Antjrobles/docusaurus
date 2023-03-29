@@ -1,13 +1,15 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+require('dotenv').config(); 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'My Second Brain',
+  title: 'My Docs Vault',
+  tagline: 'Antjrobles\'s Second Brain',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -64,7 +66,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Home',
         logo: {
           alt: 'My Site Logo',
           src: 'img/AR2.svg',
@@ -134,6 +136,9 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    customFields: {
+    myEnv: process.env.REACT_APP_CLERK_PUBLISHABLE_API_KEY,
+    }
 };
 
 module.exports = config;
