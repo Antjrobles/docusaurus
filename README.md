@@ -1,6 +1,9 @@
 # SERVER
-- To change local port and default localhot to a custom ip address and different port, run this command in the terminal:
-```sudo npm run serve -- --build --port 8053 --host 192.168.0.11  ```
+- To change local port and default localhost to a custom ip address and different port, run this command in the terminal:
+  
+``` shell
+sudo npm run serve -- --build --port 8053 --host 192.168.0.11  
+```
 
 
 # Website
@@ -9,21 +12,21 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ### Installation
 
-```
+``` shell
 $ yarn
 ```
 
 ### Local Development
 
-```
-$ yarn start
+``` shell
+ yarn start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ### Build
 
-```
+``` shell
 $ yarn build
 ```
 
@@ -33,13 +36,13 @@ This command generates static content into the `build` directory and can be serv
 
 Using SSH:
 
-```
+``` ssh
 $ USE_SSH=true yarn deploy
 ```
 
 Not using SSH:
 
-```
+``` ssh
 $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
