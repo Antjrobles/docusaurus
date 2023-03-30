@@ -1,6 +1,12 @@
 # SERVER
 - To change local port and default localhost to a custom ip address and different port, run this command in the terminal:
-  
+
+- In development mode:
+``` shell
+sudo npm run start -- --port 8053 --host 192.168.0.52
+```
+
+- To test server mode:  
 ``` shell
 sudo npm run serve -- --build --port 8053 --host 192.168.0.11  
 ```
