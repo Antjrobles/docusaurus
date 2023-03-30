@@ -73,6 +73,11 @@ const config = {
         },
         items: [
           {
+            type: 'docsVersionDropdown',
+            position: 'right',
+          },
+          { to: '/javascript/javascript', label: 'JS', position: 'left' },
+          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
@@ -88,7 +93,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [ ],
+        links: [],
         copyright: `Copyright © ${new Date().getFullYear()} My Second Brain, Inc. Built with Docusaurus by Antonio Robles.`,
       },
       prism: {
