@@ -1,5 +1,10 @@
 ---
 sidebar_position: 1
+id: astro
+title: Astro
+description: Astro information and info
+layout: doc
+date: DD-MM_YYYY HH:MM:SS +/-TTTT
 ---
 
 # Astro
