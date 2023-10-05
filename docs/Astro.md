@@ -7,8 +7,11 @@ layout: doc
 date: DD-MM_YYYY HH:MM:SS +/-TTTT
 ---
 
-# Astro
 
+  ![Astro logo](/img/astro.png)
+
+
+# Astro
 
 ### Notes
 
