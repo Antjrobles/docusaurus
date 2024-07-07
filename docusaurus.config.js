@@ -76,14 +76,13 @@ const config = {
             type: 'docsVersionDropdown',
             position: 'right',
           },
-          { to: '/javascript/javascript', label: 'JS', position: 'left' },
+          { to: '/javascript/javascript', label: 'NOTES', position: 'left' },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Índice',
+            label: 'DAM',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
