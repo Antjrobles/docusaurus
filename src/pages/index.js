@@ -17,7 +17,7 @@ function HomepageHeader() {
           <p className='hero__subtitle'>{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link className='button button--secondary button--lg' to='/docs/category/dam-1%C2%BA'>
-              Docusaurus -  🧠
+              DAM -  🧠
             </Link>
           </div>
         </div>
