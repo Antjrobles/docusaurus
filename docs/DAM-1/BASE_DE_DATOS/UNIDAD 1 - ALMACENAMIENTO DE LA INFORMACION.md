@@ -372,7 +372,7 @@ Las ventajas del uso de SGBD son:
 - Incorporan mecanismos de copias de seguridad y recuperación para restablecer la información en caso de fallos en el sistema.
 
 El SGBD interacciona con otros elementos software existentes en el sistema, concretamente con el sistema operativo (SO). Los datos almacenados de forma estructurada en la base de datos son utilizados indistintamente por otras aplicaciones, será el SGBD quien ofrecerá una serie de facilidades a éstas para el acceso y manipulación de la información, basándose en las funciones y métodos propios del sistema operativo.
-### **1. 6. 1. Funciones del SGBD**
+### **5.1. Funciones del SGBD**
 Un SGBD desarrolla tres funciones fundamentales: descripción, manipulación y control o utilización de los datos. A continuación, se detallan cada una de ellas.
 
 - **Función de descripción o definición:** Permite al diseñador de la base de datos crear las estructuras apropiadas para integrar adecuadamente los datos. Esta función es la que permite definir las tres estructuras de la base de datos: Estructura interna, Estructura conceptual y Estructura externa. (Estos conceptos se verán más adelante en el epígrafe sobre arquitectura del SGBD).
@@ -400,7 +400,7 @@ Por manipulación de datos entenderemos:
 - **Función de control:** permite al administrador de la base de datos establecer mecanismos de protección de las diferentes visiones de los datos asociadas a cada usuario, proporcionando elementos de creación y modificación de dichos usuarios. Adicionalmente, incorpora sistemas para la creación de copias de seguridad, carga de ficheros, auditoría, protección de ataques, configuración del sistema, etc. El lenguaje que implementa esta función es el **lenguaje de control de datos** o **DCL.**
 
 ¿Y a través de qué lenguaje podremos desarrollar estas funciones sobre la base de datos? Lo haremos utilizando el **Lenguaje Estructurado de Consultas** ( **SQL**: Structured Query Language). Este lenguaje proporciona sentencias para realizar operaciones de DDL, DML y DCL. SQL fue publicado por el ANSI en 1986 (American National Standard Institute) y ha ido evolucionando a lo largo del tiempo. Además, los SGBD suelen proporcionar otras herramientas que complementan a estos lenguajes como generadores de formularios, informes, interfaces gráficas, generadores de aplicaciones, etc.
-### **1. 6. 2. Componentes del SGBD**
+### **5.2. Componentes del SGBD**
 Una vez descritas las funciones que un SGBD debe llevar a cabo, imaginarás que un SGBD es un paquete de software complejo que ha de proporcionar servicios relacionados con el almacenamiento y la explotación de los datos de forma eficiente. Para ello, cuenta con una serie de componentes que se detallan a continuación:
 
 **Lenguajes de la base de datos.** Cualquier sistema gestor de base de datos ofrece la posibilidad de utilizar lenguajes e interfaces adecuadas para sus diferentes tipos de usuarios. A través de los lenguajes se pueden especificar los datos que componen la BD, su estructura, relaciones, reglas de integridad, control de acceso, características físicas y vistas externas de los usuarios. Los lenguajes del SGBD son: Lenguaje de Definición de los Datos (**DDL**), Lenguaje de Manejo de Datos (**DML**) y Lenguaje de Control de Datos (**DCL**). 
@@ -426,7 +426,7 @@ Una vez descritas las funciones que un SGBD debe llevar a cabo, imaginarás que 
   - Usuarios finales: ocasionales, simples, avanzados y autónomos.
 
 **Herramientas de la base de datos.** Son un conjunto de aplicaciones que permiten a los administradores la gestión de la base de datos, de los usuarios y permisos, generadores de formularios, informes, interfaces gráficas, generadores de aplicaciones, etc.
-### **1. 6. 3. Arquitectura del SGBD**
+### **5.3. Arquitectura del SGBD**
 Un SGBD cuenta con una arquitectura a través de la que se simplifica a los diferentes usuarios de la base de datos su labor. El objetivo fundamental es separar los programas de aplicación de la base de datos física.
 
 Encontrar un estándar para esta arquitectura no es una tarea sencilla, aunque los tres estándares que más importancia han cobrado en el campo de las bases de datos son ANSI/SPARC/X3, CODASYL y ODMG (éste sólo para las bases de datos orientadas a objetos). Tanto ANSI (EEUU), como ISO (Resto del mundo), son el referente en cuanto a estandarización de bases de datos, conformando un único modelo de bases de datos.
@@ -446,7 +446,7 @@ Gracias a esta arquitectura se consigue la **independencia de datos** a dos nive
 
 En el siguiente gráfico se puede apreciar la estructura de la que estamos hablando:
 
-### **1. 6. 4. Tipos de SGBD**
+### **5.4. Tipos de SGBD**
 Según **el modelo lógico en que se basan**. Actualmente, el modelo lógico que más se utiliza es el **relacional**. Los modelos en red y jerárquico han quedado obsoletos. Otro de los modelos que más extensión está teniendo es el modelo **orientado a objetos**. Por tanto, en esta primera clasificación tendremos: 
 
 - Modelo Jerárquico.
@@ -472,7 +472,7 @@ Según **el propósito o finalidad**:
 
 - **Propósito General:** pueden ser utilizados para el tratamiento de cualquier tipo de base de datos y aplicación.
 - **Propósito Específico:** Cuando el rendimiento es fundamental, se puede diseñar y construir un software de propósito especial para una aplicación específica, y este sistema no sirve para otras aplicaciones. Muchos sistemas de reservas de líneas aéreas son de propósito especial y pertenecen a la categoría de **sistemas de procesamiento de transacciones en línea**, que deben atender un gran número de transacciones concurrentes sin imponer excesivos retrasos.
-### **1. 6. 7. SGBD comerciales**
+### **5.7. SGBD comerciales**
 
 |**ORACLE**|Reconocido como uno de los mejores a nivel mundial. Es multiplataforma, potente a nivel transaccional, confiable y seguro. Es Cliente/Servidor. Basado en el modelo de datos Relacional. De gran potencia, aunque con un precio elevado hace que sólo se vea en empresas muy grandes y multinacionales. Ofrece versiones gratuitas   de las cuales la última es Oracle Database 18c Express Edition (XE) |
 | :- | :- |
@@ -483,7 +483,7 @@ Según **el propósito o finalidad**:
 |**SYBASE**|Un DBMS con bastantes años en el mercado, tiene 3 versiones para ajustarse a las necesidades reales de cada empresa. Es un sistema relacional, altamente escalable, de alto rendimiento, con soporte a grandes volúmenes de datos, transacciones y usuarios, y de bajo costo.|
 
 Otros SGBD comerciales importantes son: DBASE, ACCESS, INTERBASE, FOXPRO.
-## **1. 8. SGBD libres**
+## **6. SGBD libres**
 La alternativa a los sistemas gestores de bases de datos comerciales la encontramos en los SGBD de código abierto o libres, también llamados Open Source. Son sistemas distribuidos y desarrollados libremente. En la siguiente tabla se relacionan los cinco más utilizados actualmente, así como sus principales características y enlaces a sus páginas web:
 
 |**MySQL**|Es un sistema de gestión de base de datos relacional, multihilo y multiusuario con más de seis millones de instalaciones. Distribuido bajo dos tipos de licencias, comercial y libre. Multiplataforma, posee varios motores de almacenamiento, accesible a través de múltiples lenguajes de programación y muy ligado a aplicaciones web.|
@@ -492,7 +492,7 @@ La alternativa a los sistemas gestores de bases de datos comerciales la encontra
 |**Firebird**|Sistema Gestor de Base de Datos relacional, multiplataforma, con bajo consumo de recursos, excelente gestión de la concurrencia, alto rendimiento y potente soporte para diferentes lenguajes.|
 |**Apache Derby**|Sistema Gestor escrito en Java, de reducido tamaño, con soporte multilenguaje, multiplataforma, altamente portable, puede funcionar embebido o en modo cliente/servidor.|
 |**SQLite**|Sistema relacional, basado en una biblioteca escrita en C que interactúa directamente con los programas, reduce los tiempos de acceso siendo más rápido que MySQL o PostGreSQL, es multiplataforma y con soporte para varios lenguajes de programación.|
-## **1. 9. Bases de datos centralizadas**
+## **7. Bases de datos centralizadas**
 **Sistema de base de datos centralizado:** Es aquella estructura en la que el SGBD está implantado en una sola plataforma u ordenador desde donde se gestiona directamente, de modo centralizado, la totalidad de los recursos. Es la arquitectura de los centros de proceso de datos tradicionales. Se basa en tecnologías sencillas, muy experimentadas y de gran robustez.
 
 **Las principales características de las bases de datos centralizadas son:** 
@@ -512,7 +512,7 @@ En la siguiente tabla se representan las ventajas e inconvenientes destacables d
 |Puede conservarse la integridad. |Las cargas de trabajo no se pueden difundir entre varias computadoras, ya que los trabajos siempre se ejecutarán en la misma máquina. |
 |El procesamiento de los datos ofrece un mejor rendimiento. |Los departamentos de sistemas retienen el control de toda la organización. |
 |Mantenimiento más barato. Mejor uso de los recursos y menores recursos humanos. |Los sistemas centralizados requieren un mantenimiento central de datos. |
-## **1. 10. Bases de datos distribuidas**
+## **8. Bases de datos distribuidas**
 **Base de datos distribuida** **(BDD):** es un conjunto de múltiples bases de datos lógicamente relacionadas las cuales se encuentran distribuidas entre diferentes nodos interconectados por una red de comunicaciones.
 
 **Sistema de bases de datos distribuida** **(SBDD):** es un sistema en el cual múltiples sitios de bases de datos están ligados por un sistema de comunicaciones, de tal forma que, un usuario en cualquier sitio puede acceder los datos en cualquier parte de la red exactamente como si los datos estuvieran almacenados en su sitio propio.
@@ -531,7 +531,7 @@ Un SGBDD desarrollará su trabajo a través de un conjunto de sitios o nodos, qu
 |Existe cierta tolerancia a fallos. Mediante la [replicación](https://www.mecd.es/cidead/aulavirtual/pluginfile.php/392683/mod_resource/content/3/BD01_Contenidos_Imprimible/index.html#tf6cf01bb-7067-cb6e-21cd-bbb73be4f6a3), si un nodo deja de funcionar el sistema completo no deja de funcionar.|Dado que los datos pueden estar replicados, el control de concurrencia y los mecanismos de recuperación son mucho más complejos que en un sistema centralizado.|
 |El enfoque distribuido de las bases de datos se adapta más naturalmente a la estructura de las organizaciones. Permiten la incorporación de nodos de forma flexible y fácil.|El intercambio de mensajes y el cómputo adicional necesario para conseguir la coordinación entre los distintos nodos constituyen una forma de sobrecarga que no surge en los sistemas centralizados.|
 |Aunque los nodos están interconectados, tienen independencia local.|Dada la complejidad del procesamiento entre nodos es difícil asegurar la corrección de los algoritmos, el funcionamiento correcto durante un fallo o la recuperación.|
-### **1. 10. 1. Fragmentación**
+### **8.1. Fragmentación**
 Sabemos que en los sistemas de bases de datos distribuidas la información se encuentra repartida en varios lugares. La forma de extraer los datos consultados puede realizarse mediante la fragmentación de distintas tablas pertenecientes a distintas bases de datos que se encuentran en diferentes servidores. El problema de fragmentación se refiere al particionamiento de la información para distribuir cada parte a los diferentes sitios de la red.
 
 Pero hay que tener en cuenta el **grado de fragmentación** que se aplicará, ya que éste es un factor determinante a la hora de la ejecución de consultas. Si no existe fragmentación, se tomarán las relaciones o tablas como la unidad de fragmentación. Pero también puede fragmentarse a nivel de tupla (fila o registro) o a nivel de atributo (columna o campo) de una tabla. No será adecuado un grado de fragmentación nulo, ni tampoco un grado de fragmentación demasiado alto. El grado de fragmentación deberá estar equilibrado y dependerá de las particularidades de las aplicaciones que utilicen dicha base de datos. Concretando, el objetivo de la fragmentación es encontrar un nivel de particionamiento adecuado en el rango que va desde tuplas o atributos hasta relaciones completas.
