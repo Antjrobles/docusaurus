@@ -16,7 +16,9 @@
   "dependencies": {
     "@clerk/clerk-react": "^4.12.9",
     "@docusaurus/core": "^3.4.0",
+    "@docusaurus/plugin-content-docs": "^3.4.0",
     "@docusaurus/preset-classic": "^3.4.0",
+    "@easyops-cn/docusaurus-search-local": "^0.44.3",
     "build": "^0.1.4",
     "clsx": "^1.2.1",
     "dotenv": "^16.0.3",
