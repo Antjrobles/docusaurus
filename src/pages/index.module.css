@@ -23,3 +23,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.img-center {
+  display: flex;
+  justify-content: center;
+  width: 100%,
+  }
