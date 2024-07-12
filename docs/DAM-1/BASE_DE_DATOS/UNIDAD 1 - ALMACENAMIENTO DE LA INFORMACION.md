@@ -2,13 +2,12 @@
 sidebar_position: 0
 ---
 
-BD01ALMACENAMIENTO DE LA INFORMACION
 
-# Tema 1. Almacenamiento de la información
+# Tema 1. ALMACENAMIENTO DE LA INFORMACIÓN
 
 
-## **1. 2. Los ficheros de información**
-### **1. 2. 1. ¿Qué es un fichero?**
+## **1. Los ficheros de información**
+### **1.1. ¿Qué es un fichero?**
 **Fichero o archivo:** conjunto de información relacionada, tratada como un todo y organizada de forma estructurada. Es una secuencia de dígitos binarios que organiza información relacionada con un mismo aspecto.
 
 Los ficheros están formados por **registros lógicos** que contienen datos relativos a un mismo elemento u objeto. A su vez, los registros están divididos en campos que contienen cada una de las informaciones elementales que forman un registro (por ejemplo, el nombre del usuario o su dirección de correo electrónico).
@@ -18,7 +17,7 @@ Los datos están almacenados de tal forma que se puedan añadir, suprimir, actua
 Como los ficheros suelen ser muy voluminosos, solo se pueden llevar a la memoria principal partes de ellos para poder procesarlos. La cantidad de información que es transferida entre el soporte en el que se almacena el fichero, y la memoria principal del ordenador, en una sola operación de lectura/grabación, recibe el nombre de **registro físico*** o **bloque**.
 
 Normalmente en cada operación de lectura/grabación se transfieren varios registros del fichero, es decir un bloque suele contener varios registros lógicos. Al número de registros que entran en un bloque se le conoce con el nombre de **factor de blocaje**, y a esta operación de agrupar varios registros en un bloque se le llama **bloqueo de registros**.
-### **1. 2. 2. Tipos de ficheros**
+### **1. 2. Tipos de ficheros**
 
 Según la función que vaya a desempeñar los ficheros, éstos pueden ser clasificados de varias maneras. En la imagen puedes observar una posible clasificación.
 
@@ -30,14 +29,14 @@ Según la función que vaya a desempeñar los ficheros, éstos pueden ser clasif
    1. **Ficheros intermedios:** almacenan resultados de una aplicación que serán utilizados por otra.
    1. **Ficheros de maniobras:** almacenan datos de una aplicación que no pueden ser mantenidos en memoria principal por falta de espacio.
    1. **Ficheros de resultados:** almacenan datos que van a ser transferidos a un dispositivo de salida.
-### **1. 2. 3. Los soportes de información**
+### **1. 3. Los soportes de información**
 Los ficheros se almacenan en soportes de información manejados por dispositivos periféricos del ordenador, que permiten leer y grabar datos en el soporte. Los soportes más utilizados para almacenar los ficheros son las cintas magnéticas y los discos (magnéticos, ópticos, o magneto-ópticos). Dentro de estos dos tipos de soporte existen en el mercado una gran variedad de modelos.
 
 Por tanto, se distinguen dos tipos de soportes para el almacenamiento de datos:
 
 - **Soportes de Acceso Directo a los datos** (Por ejemplo: discos). Son los más empleados y el acceso a los datos puede hacerse de forma directa,* pudiendo colocarnos en la posición que nos interesa y leer a partir de ella.
 - **Soportes de Acceso Secuencial** (Por ejemplo: cintas magnéticas). Se suelen usar en copias de seguridad y si deseamos leer un dato que está en la mitad de la cinta, tendremos que leer todo lo que hay hasta llegar a esa posición.
-### **1. 2. 4. Métodos de acceso**
+### **1. 4 Métodos de acceso**
 Los objetivos fundamentales de estas modificaciones pueden resumirse en:
 
 - Proporcionar un acceso rápido a los registros.
@@ -48,7 +47,7 @@ Los objetivos fundamentales de estas modificaciones pueden resumirse en:
 Las distintas formas de organizar un fichero en un soporte de memoria o, lo que se conoce también por métodos de acceso a los ficheros se detallan en el siguiente gráfico.
 
 Las organizaciones secuenciales, de acceso aleatorio o directo y de acceso indexado son las más comunes.
-### **1. 2. 5. Ficheros secuenciales**
+### **1.5. Ficheros secuenciales**
 Un fichero con organización secuencial se caracteriza porque sus registros están almacenados de forma contigua, de manera, que la única forma de acceder a él, es leyendo un registro tras otro desde el principio hasta el final. En los ficheros secuenciales suele haber una marca indicativa del fin del fichero, que suele denominarse **EOF** (End of File). Para detectar el final del fichero sólo es necesario encontrar la marca EOF.
 
 Este tipo de ficheros pueden utilizar dispositivos o soportes no direccionables o de acceso secuencial, como son las cintas magnéticas de almacenamiento de datos. También se utiliza en los CD de audio y los DVD de vídeo, en los que la música o las imágenes se almacenan a lo largo de una espiral continua.
@@ -66,7 +65,7 @@ Otras características relevantes de los ficheros secuenciales son:
 - Todos los lenguajes de programación disponen de instrucciones para trabajar con este tipo de ficheros.
 - No se pueden insertar registros entre los que ya están grabados.
 
-### **1. 2. 6. Ficheros de acceso directo**
+### **1.6. Ficheros de acceso directo**
 En este tipo de ficheros se puede acceder a un registro indicando la posición relativa del mismo dentro del archivo o, más comúnmente, a través de una clave que forma parte del registro como un campo más. Estos archivos deben almacenarse en dispositivos de memoria masiva de acceso directo, como son los discos magnéticos.
 
 **Campo clave:** campo que permite identificar y localizar un registro de manera ágil y organizada.
@@ -93,7 +92,7 @@ Otras características fundamentales de los ficheros de acceso directo o aleator
 - Se usan cuando el acceso a los datos de un registro se hace siempre empleando la misma clave y la velocidad de acceso a un registro es lo que más nos importa.
 - Permiten la actualización de los registros en el mismo fichero, sin necesidad de copiar el fichero.
 - Permiten realizar procesos de actualización en tiempo real.
-### **1. 2. 7. Ficheros indexados**
+### **1.7. Ficheros indexados**
 Se basan en la utilización de **índices***,* que permiten el acceso a un registro del fichero de forma directa, sin tener que leer los anteriores. Estos índices son similares a los de los libros. Si nos interesa leer un capítulo concreto podemos recurrir al índice que nos dice en que página comienza, y abrimos el libro por esa página, sin tener que mirar en todas las páginas anteriores para localizarlo.
 
 Por tanto, existirá una **zona de registros** en la que se encuentran los datos del archivo y una **zona de índices,** que contiene una tabla con las claves de los registros y las posiciones donde se encuentran los mismos. La tabla de índices estará ordenada por el campo clave.
@@ -107,7 +106,7 @@ Las características más relevantes de un fichero indexado, son las siguientes:
 - Para acceder a este tipo de ficheros utilizando el modo de acceso directo se hace conociendo el contenido del campo clave del registro que queremos localizar. Con esa información el sistema operativo puede consultar el índice y conocer la posición del registro dentro del fichero.
 - Para acceder a este tipo de ficheros utilizando el modo de acceso secuencial los registros son leídos ordenados por el contenido del campo clave, independientemente del orden en que se fueron grabando (el orden lógico no es igual al orden físico), debido a que el acceso a los datos se hace a través del índice, que para hacer más fácil la búsqueda de los registros, permanece siempre ordenado por el campo clave.
 - Solamente se puede grabar en un soporte direccionable. Por ejemplo, un disco magnético. Si esto no fuera así, no podría emplear el acceso directo.
-### **1. 2. 8. Otros (secuenciales indexados, hash.)**
+### **1.8. Otros (secuenciales indexados, hash.)**
 **Ficheros Secuenciales Indexados**
 
 También llamados parcialmente indexados, al igual que en los ficheros indexados existe una **zona de índices** y otra **zona de registros de datos**, pero esta última se encuentra dividida en **segmentos** (bloques de registros) ordenados.
@@ -137,7 +136,7 @@ Para llevar a cabo la transformación existen multitud de métodos, siendo algun
 - **Extracción:** La dirección será igual a una parte de las cifras que se extraen de la clave.
 
 Una buena transformación o función de hash, será aquella que produzca el menor número de colisiones. En este caso hay que buscar una función, a ser posible biunívoca (correspondencia 1 a 1), que relacione los posibles valores de la clave con el conjunto de números correlativos de dirección. Esta función consistirá en realizar una serie de cálculos matemáticos con el valor de la clave hasta obtener un número entre 1 y n, siendo n el número de direcciones que tiene el fichero.
-### **1. 2. 9. Parámetros de utilización**
+### **1.9. Parámetros de utilización**
 En función del uso que se vaya a dar al fichero, serán adecuados unos tipos u otros de organización. Mediante la utilización de **parámetros de referencia**, podremos determinar el uso de un fichero. Estos parámetros son: 
 
 1. **Capacidad o volumen:** es el espacio, en caracteres, que ocupa el fichero. La capacidad podrá calcularse multiplicando el número previsto de registros por la longitud media de cada registro.
@@ -148,8 +147,8 @@ En función del uso que se vaya a dar al fichero, serán adecuados unos tipos u 
    1. **Tasa de renovación:** es el tanto por ciento de registros renovados en cada tratamiento del fichero, respecto al número total de registros contenidos en él.
    1. **Frecuencia de renovación:** es el número de veces que se accede al fichero para renovarlo en un periodo de tiempo fijo.
 1. **Crecimiento:** es la variación de la capacidad del fichero y se mide con la tasa de crecimiento, que es el porcentaje de registros en que aumenta el fichero en cada tratamiento.
-## **1. 3. Bases de datos**
-### **1. 3. 1. Conceptos**
+## **2 Bases de datos**
+### **2.1. Conceptos**
 **Base de datos:** Es una colección de datos relacionados lógicamente entre sí, con una definición y descripción comunes y que están estructurados de una determinada manera. Es un conjunto estructurado de datos que representa entidades y sus interrelaciones, almacenados con la mínima redundancia y posibilitando el acceso a ellos eficientemente por parte de varias aplicaciones y usuarios.
 
 La base de datos no sólo contiene los datos de la organización, también almacena una descripción de dichos datos. Esta descripción es lo que se denomina **metadatos**, se almacena en el **diccionario de datos o catálogo*** y es lo que permite que exista **independencia de datos** lógica-física.
@@ -173,7 +172,7 @@ Las **ventajas fundamentales** que ofrece el uso de bases de datos se resumen a 
 - **Redundancia**: los datos se almacenan, por lo general, una única vez. Aunque si es necesario, podríamos repetir información de manera controlada.
 - **Interfaz de alto nivel**: mediante la utilización de lenguajes de alto nivel puede utilizarse la base de datos de manera sencilla y cómoda.
 - **Consulta directa**: existe una herramienta para poder acceder a los datos interactivamente.
-### **1. 3. 2. Usos**
+### **2.2 Usos**
 Existen cuatro tipos de personas que pueden hacer uso de una base de datos: el administrador, los diseñadores de la base de datos, los programadores de aplicaciones y los usuarios finales.
 
 **El administrador**
@@ -191,7 +190,7 @@ Una vez diseñada y construida la base de datos, los programadores se encargará
 **Los usuarios finales**
 
 Son los clientes finales de la base de datos. Al diseñar, implementar y mantener la base de datos se busca cumplir los requisitos establecidos por el cliente para la gestión de su información.
-### **1. 3. 3. Ubicación de la información**
+### **2.3. Ubicación de la información**
 Utilizamos a diario las bases de datos, pero ¿dónde se encuentra realmente almacenada la información? Las bases de datos pueden tener un tamaño muy reducido (1 MegaByte o menos) o bien, ser muy voluminosas y complejas (del orden de Terabytes). Sin embargo, todas las bases de datos normalmente se almacenan y localizan en discos duros y otros dispositivos de almacenamiento, a los que se accede a través de un ordenador. Una gran base de datos puede necesitar servidores en lugares diferentes, y viceversa, pequeñas bases de datos pueden existir como archivos en el disco duro de un único equipo.
 
 A continuación, se exponen los sistemas de almacenamiento de información más utilizados para el despliegue de bases de datos, comenzaremos por aquellos en los que pueden alojarse bases de datos de tamaño pequeño y mediano, para después analizar los sistemas de alta disponibilidad de grandes servidores.
@@ -201,9 +200,9 @@ A continuación, se exponen los sistemas de almacenamiento de información más 
 - **RAID:** acrónimo de Redundant Array of Independent Disks o matriz de discos independientes, es un contenedor de almacenamiento redundante. Se basa en el montaje en conjunto de dos o más discos duros, formando un bloque de trabajo, para obtener desde una ampliación de capacidad a mejoras en velocidad y seguridad de almacenamiento. Según las características que queramos primar, se establecen distintos sistemas de RAID.
 - **Sistemas NAS:** Es el acrónimo de Network Attached Storage ó sistema de almacenamiento masivo en red. Estos sistemas de almacenamiento permiten compartir la capacidad de almacenamiento de un computador (Servidor) con ordenadores personales o servidores clientes a través de una red, haciendo uso de un sistema operativo optimizado para dar acceso a los datos a través de protocolos de comunicación específicos. Suelen ser dispositivos para almacenamiento masivo de datos con capacidades muy altas, de varios Terabytes, generalmente superiores a los discos duros externos y además se diferencian de estos al conectar por red.
 - **Sistemas SAN:** Acrónimo de Storage Area Network o red de área de almacenamiento. Se trata de una red concebida para conectar servidores, matrices (arrays) de discos y librerías de soporte. La arquitectura de este tipo de sistemas permite que los recursos de almacenamiento estén disponibles para varios servidores en una red de área local o amplia. Debido a que la información almacenada no reside directamente en ninguno de los servidores de la red, se optimiza el poder de procesamiento para aplicaciones comerciales y la capacidad de almacenamiento se puede proporcionar en el servidor donde más se necesite.
-## **1. 4. Modelos de bases de datos**
+## **3. Modelos de bases de datos**
 La clasificación tradicional de las bases de datos establece tres modelos de bases de datos: **jerárquico, en red y relacional**. En la actualidad el modelo de bases de datos más extendido es el relacional. Aunque, hay que tener en cuenta que dos de sus variantes (modelo de bases de datos distribuidas y orientadas a objetos) son las que se más se están utilizando en los últimos tiempos.
-### **1. 4. 1. Modelo jerárquico**
+### **3.1. Modelo jerárquico**
 Cuando IBM creó su Sistema Administrador de Información o IMS, se establecieron las bases para que la gran mayoría de sistemas de gestión de información de los años setenta utilizaran el modelo jerárquico. También recibe el nombre de modelo en árbol, ya que utiliza una estructura en árbol invertido para la organización de los datos.
 
 La información se organiza con una jerarquía en la que la relación entre las entidades de este modelo siempre es del tipo padre/hijo. De tal manera que existen nodos que contienen atributos o campos y que se relacionarán con sus nodos hijos, pudiendo tener cada nodo más de un hijo, pero un nodo siempre tendrá un sólo padre.
