@@ -522,6 +522,8 @@ En la siguiente tabla se representan las ventajas e inconvenientes destacables d
 
 Un SGBDD desarrollará su trabajo a través de un conjunto de sitios o nodos, que poseen un sistema de procesamiento de datos completo con una base de datos local, un sistema de gestor de bases de datos e interconectados entre sí. Si estos nodos están dispersos geográficamente se interconectarán a través de una red de área amplia o WAN, pero si se encuentran en edificios relativamente cercanos, pueden estar interconectados por una red de área local o LAN. Este tipo de sistemas es utilizado en: organizaciones con estructura descentralizada, industrias de manufactura con múltiples sedes (automoción), aplicaciones militares, lineas aéreas, cadenas hoteleras, servicios bancarios, etc.
 
+![imagen](./../../../static/img/IMAGEN1.png)
+
 |**Ventajas**|**Inconvenientes**|
 | :-: | :-: |
 |El acceso y procesamiento de los datos es más rápido ya que varios nodos comparten carga de trabajo.|La probabilidad de violaciones de seguridad es creciente si no se toman las precauciones debidas.|
