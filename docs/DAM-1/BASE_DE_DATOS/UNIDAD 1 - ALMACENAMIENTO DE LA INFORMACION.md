@@ -68,7 +68,7 @@ Otras características relevantes de los ficheros secuenciales son:
 - Todos los lenguajes de programación disponen de instrucciones para trabajar con este tipo de ficheros.
 - No se pueden insertar registros entre los que ya están grabados.
 <div style="text-align: center">
-  <img src="../../../static/bd/3-registro.png" alt="registro"/>
+  <img src="../../../static/bd/3-registro.png" alt="registro" style="display: inline-block"/>
 </div>
 
 
