@@ -3,7 +3,7 @@ sidebar_position: 0
 ---
 
 
-# Tema 1. ALMACENAMIENTO DE LA INFORMACIÓN
+# ALMACENAMIENTO DE LA INFORMACIÓN
 
 
 ## **1. Los ficheros de información**
@@ -67,8 +67,9 @@ Otras características relevantes de los ficheros secuenciales son:
 - Se pueden grabar en cualquier tipo de soporte, tanto en secuenciales como direccionables.
 - Todos los lenguajes de programación disponen de instrucciones para trabajar con este tipo de ficheros.
 - No se pueden insertar registros entre los que ya están grabados.
-
-![tipo_de_ficheros](../../../static/bd/3-registro.png)
+<p align="center">
+  <img src="../../../static/bd/3-registro.png" alt="registro"/>
+</p>
 
 
 ### **1.6. Ficheros de acceso directo**
