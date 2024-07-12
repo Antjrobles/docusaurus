@@ -18,6 +18,7 @@ Como los ficheros suelen ser muy voluminosos, solo se pueden llevar a la memoria
 
 Normalmente en cada operación de lectura/grabación se transfieren varios registros del fichero, es decir un bloque suele contener varios registros lógicos. Al número de registros que entran en un bloque se le conoce con el nombre de **factor de blocaje**, y a esta operación de agrupar varios registros en un bloque se le llama **bloqueo de registros**.
 ### **1. 2. Tipos de ficheros**
+![tipo_de_ficheros](../../../static/bd/1-tipo_de_ficheros.png)
 
 Según la función que vaya a desempeñar los ficheros, éstos pueden ser clasificados de varias maneras. En la imagen puedes observar una posible clasificación.
 
@@ -45,6 +46,8 @@ Los objetivos fundamentales de estas modificaciones pueden resumirse en:
 - Permitir que la estructura refleje la organización real de la información.
 
 Las distintas formas de organizar un fichero en un soporte de memoria o, lo que se conoce también por métodos de acceso a los ficheros se detallan en el siguiente gráfico.
+![tipo_de_ficheros](../../../static/bd/2-metodos_acceso.png)
+
 
 Las organizaciones secuenciales, de acceso aleatorio o directo y de acceso indexado son las más comunes.
 ### **1.5. Ficheros secuenciales**
@@ -64,6 +67,9 @@ Otras características relevantes de los ficheros secuenciales son:
 - Se pueden grabar en cualquier tipo de soporte, tanto en secuenciales como direccionables.
 - Todos los lenguajes de programación disponen de instrucciones para trabajar con este tipo de ficheros.
 - No se pueden insertar registros entre los que ya están grabados.
+
+![tipo_de_ficheros](../../../static/bd/3-registro.png)
+
 
 ### **1.6. Ficheros de acceso directo**
 En este tipo de ficheros se puede acceder a un registro indicando la posición relativa del mismo dentro del archivo o, más comúnmente, a través de una clave que forma parte del registro como un campo más. Estos archivos deben almacenarse en dispositivos de memoria masiva de acceso directo, como son los discos magnéticos.
