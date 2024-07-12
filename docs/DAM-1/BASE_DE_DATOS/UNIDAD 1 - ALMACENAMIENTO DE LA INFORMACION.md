@@ -211,7 +211,7 @@ Los datos de este modelo se almacenan en estructuras lógicas llamadas segmentos
 
 Hoy en día, debido a sus limitaciones, el modelo jerárquico está en desuso. En el siguiente gráfico puedes observar la estructura de almacenamiento del modelo jerárquico.
 
-### **1. 4. 2. Modelo en red**
+### **3.2. Modelo en red**
 El modelo de datos en red aparece a mediados de los sesenta como respuesta a limitaciones del modelo jerárquico en cuanto a representación de relaciones más complejas. Podemos considerar a IDS (Integrated Data Store) de Bachman como el primer sistema de base de datos en red. Tras él se intentó crear un estándar de modelo de red por parte de CODASYL, siendo un modelo que tuvo gran aceptación a principios de los setenta.
 
 El modelo en red organiza la información en registros (también llamados nodos) y enlaces. En los registros se almacenan los datos, mientras que los enlaces permiten relacionar estos datos. Las bases de datos en red son parecidas a las jerárquicas sólo que en ellas puede haber más de un padre.
@@ -220,7 +220,7 @@ En este modelo se pueden representar perfectamente cualquier tipo de relación e
 
 El sistema de gestión de información basado en el modelo en red más popular es el sistema IDMS.
 
-### **1. 4. 3. Modelo relacional**
+### **3.3. Modelo relacional**
 Este modelo es posterior a los dos anteriores y fue desarrollado por Codd en 1970. Hoy en día las bases de datos relacionales son las más utilizadas.
 
 En el modelo relacional la base de datos es percibida por el usuario como un conjunto de tablas. Esta percepción es sólo a nivel lógico, ya que a nivel físico puede estar implementada mediante distintas estructuras de almacenamiento.
@@ -245,7 +245,7 @@ Las tablas deben cumplir una serie de requisitos:
 El lenguaje habitual para construir las consultas a bases de datos relacionales es SQL, Structured Query Language o Lenguaje Estructurado de Consultas, un estándar implementado por los principales motores o sistemas de gestión de bases de datos relacionales.
 
 Durante su diseño, una base de datos relacional pasa por un proceso al que se conoce como normalización de una base de datos. La normalización de bases de datos relacional consiste en definir las reglas que determinan las dependencias entre los datos de una base de datos relacional. Si definimos esta relación o dependencia entre los elementos de una determinada base de datos de la manera más sencilla posible, conseguiremos que la cantidad de espacio necesario para guardar los datos sea el menor posible y la facilidad para actualizar la relación sea la mayor posible asegurando la coherencia de la información. Es decir, optimizaremos su funcionamiento.
-### **1. 4. 4. Modelo orientado a objetos**
+### **3.4. Modelo orientado a objetos**
 El modelo orientado a objetos define una base de datos en términos de **objetos**, sus propiedades y sus operaciones. Los objetos con la misma estructura y comportamiento pertenecen a una **clase**, y las clases se organizan en jerarquías. Las operaciones de cada clase se especifican en términos de procedimientos predefinidos denominados **métodos**. Algunos sistemas existentes en el mercado, basados en el modelo relacional, han sufrido evoluciones incorporando conceptos orientados a objetos. A estos modelos se les conoce como sistemas **objeto-relacionales**.
 
 El objetivo del modelo orientado a objetos es cubrir las limitaciones del modelo relacional. Gracias a este modelo se incorporan mejoras como la herencia entre tablas, los tipos definidos por el usuario, soporte multimedia, etc.
@@ -257,7 +257,7 @@ Los conceptos más importantes del paradigma de objetos que el modelo orientado 
 - **Polimorfismo** - Propiedad de una operación mediante la cual puede ser aplicada a distintos tipos de objetos.
 
 Desde la aparición de la programación orientada a objetos (POO u OOP) se empezó a pensar en bases de datos adaptadas a estos lenguajes. Este modelo es considerado como el fundamento de las bases de datos de tercera generación, siendo consideradas las bases de datos en red como la primera y las bases de datos relacionales como la segunda generación. Aunque no han reemplazado a las bases de datos relacionales, si son el tipo de base de datos que más está creciendo en los últimos años.
-### **1. 4. 5. Otros modelos**
+### **3.5. Otros modelos**
 Además de los modelos clásicos vistos hasta el momento, vamos a detallar a continuación las particularidades de otros modelos de bases de datos existentes y que, en algunos casos, son una evolución de los clásicos.
 
 **Modelo Objeto-Relacional** 
@@ -287,7 +287,7 @@ Son bases de datos ideadas para desarrollar aplicaciones muy concretas. Básicam
 Son bases de datos caracterizadas por su velocidad para gestionar el intercambio de información, se utilizan sobre todo en sistemas bancarios, análisis de calidad y datos de producción industrial. Son bases de datos muy fiables, ya que en ellas cada una de las operaciones de inserción, actualización o borrado se realizan completamente o se descartan. Entre la más destacadas se encuentra Oracle.
 
 **Modelo de bases de datos orientadas a documentos.** En este modelo el principal objeto de gestión es el documento que contiene datos semiestructurados que podrán estar almacenados en algún formato, por ejemplo, XML. Como ejemplo de este tipo de bases de datos puedes encontrar [**MongoDB** ](https://www.mongodb.com/es "Accede a la página oficial de MongoDB (se abre en una ventana nueva)")y [**CouchDB**](http://couchdb.apache.org/ "Accede a la página oficial de CouchDB (se abre en una ventana nueva)").
-## **1. 5. Tipos**
+## **4. Tipos**
 ### **Clasificación de las bases de datos**
 **Bases de datos según su contenido**
 
@@ -349,7 +349,7 @@ Una misma base de datos puede tener acceso local y además una edición en CD-RO
 - **Bases de datos del ámbito político-administrativo y jurídico**: contienen información de interés para los organismos de la administración y los profesionales del Derecho: legislación, jurisprudencia, ...
 - **Bases de datos del ámbito sanitario**: además de las propias del primer grupo especializadas en ciencias de la salud, existen otros sistemas con información de interés sanitario: historiales médicos, archivos hospitalarios, ...
 - **Bases de datos para el gran público**: contienen información destinada a cubrir necesidades de información general, de interés para un gran número de usuarios.
-## **1. 6. Sistemas gestores de bases de datos**
+## **5. Sistemas gestores de bases de datos**
 Para poder tratar la información contenida en las bases de datos se utilizan los sistemas gestores de bases de datos o SGBD, también llamados DBMS (DataBase Management System), que ofrecen un conjunto de programas que permiten acceder y gestionar dichos datos.
 
 El objetivo fundamental de los SGBD es proporcionar eficiencia y seguridad a la hora de recuperar o insertar información en las bases de datos. Estos sistemas están diseñados para la manipulación de grandes bloques de información.
