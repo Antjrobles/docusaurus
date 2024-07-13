@@ -9,6 +9,12 @@ En este espacio iré dejando notas de las cosas que voy aprendiendo, para tenerl
 📌 Enlaces a las notas:
 - [AENA](Aena) ➡️
 - [ANSIBLE](Ansible) ➡️
+- [AI PROMPTS](AI_Prompts) ➡️
+- [ASTRO](Astro) ➡️
+- [AWS](Aws) ➡️
 - [BASH](Bash) ➡️
+- [BOOTSTRAP](Bootstrap) ➡️
+- [BLOG IDEAS](Blog_ideas) ➡️
+- [CSS](Css) ➡️
 - [DOCKER](Docker) ➡️
 - [GIT](Git) ➡️
