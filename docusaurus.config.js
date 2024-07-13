@@ -100,7 +100,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['powershell', 'bash', 'shell', 'sh', 'git', 'md', 'html', 'docker'],
+        additionalLanguages: ['powershell'],
       },
     }),
   customFields: {
