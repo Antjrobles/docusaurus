@@ -1,0 +1,51 @@
+
+
+# AI PROMPTS
+---
+
+## WEB DEVELOPMENTS PROMPTS
+
+```js
+// Generate a semantic HTML and Tailwind CSS "Contact Support" form consisting of the user's name, email, issue type and message. The form elements should be stacked vertically and placed inside a card. Make it responsive
+
+//CODE
+<div class="container mx-auto px-4 mt-8">
+  <div class="max-w-xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+    <div class="p-4 md:p-6">
+      <h2 class="text-lg font-semibold text-gray-800 mb-2">Contact Support</h2>
+      <form class="space-y-4">
+        <div class="flex flex-wrap -mx-2">
+          <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+            <label class="block text-gray-700 font-semibold mb-2" for="name">Name</label>
+            <input class="border border-gray-400 p-2 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="name" name="name" required>
+          </div>
+          <div class="w-full md:w-1/2 px-2">
+            <label class="block text-gray-700 font-semibold mb-2" for="email">Email</label>
+            <input class="border border-gray-400 p-2 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-2">
+          <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+            <label class="block text-gray-700 font-semibold mb-2" for="issue">Issue Type</label>
+            <select class="border border-gray-400 p-2 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" id="issue" name="issue" required>
+              <option value="" disabled selected>Select an issue type</option>
+              <option value="billing">Billing</option>
+              <option value="technical">Technical</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-2">
+          <div class="w-full px-2">
+            <label class="block text-gray-700 font-semibold mb-2" for="message">Message</label>
+            <textarea class="border border-gray-400 p-2 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" id="message" name="message" rows="4" required></textarea>
+          </div>
+        </div>
+        <div class="flex justify-center mt-4">
+          <button class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+```
