@@ -126,3 +126,36 @@ Write a unit test for the below Javascript function using Jest as the testinf fr
 
 Write a list of test cases to manually test user registration in a web/mobile application
 ```
+
+## SHELL COMMANDS & GIT
+```bash
+# Write a shell command to delete all files with the extension '.log' in the 'logs' folder
+rm logs/*.log
+
+# Write a git command to undo the previous commit
+git reset HEAD~1
+```
+
+## REGULAR EXPRESION. GENERATE & EXPLANATIONS
+- We ask ChatGPT to create regular expression that match our requirements, and explain them to us.
+
+## RESUME & COVERS LETTERS
+
+## AI ART KEY WORDS
+```text
+A watercolor painting of a campground...
+A pencil sketch of a campground...
+A 3d rendering of a campground...
+```
+
+## GUIDE TO A GOOD PROMPT
+```text
+- SUBJECT, MEDIUM, ADJECTIVE, STYLE/ARTIST AND TECHNICAL TERMS (in this order).
+
+- SUBJECTS: Oceanics currents, the cosmos, microscopic life...
+- MEDIUM: Paintning, Sculpture, Drawing, Printmaking, Ceramics, Textille, Collage, Engraving, Woodcutting, Digital art...
+- ADJECTIVES: Vibrant, Chaotic, Serene, Playful, Tranquil, Sublme...
+- STYLE / ARTITS: Geometric, Vintage, Origami, Sureal, Realistic, Watercolor, Grunge, Art Brut...
+- TECHNICAL TERMS: ISO 800 f/4, Shallow depth-of-field, High contrast, Telephoto Lens, Kodak Gold 200...
+```
+
