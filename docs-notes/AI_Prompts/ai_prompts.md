@@ -1,5 +1,4 @@
 
-![AI_PROMPTS]()
 
 > # AI PROMPTS
 
