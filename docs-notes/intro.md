@@ -12,4 +12,3 @@ En este espacio iré dejando notas de las cosas que voy aprendiendo, para tenerl
 - [BASH](Bash) ➡️
 - [DOCKER](Docker) ➡️
 - [GIT](Git) ➡️
--
