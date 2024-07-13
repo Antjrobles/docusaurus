@@ -49,3 +49,65 @@
   </div>
 </div>
 ```
+
+## EXPRESS AND MONGODB
+```js
+// Write and Express.js API to fetch the current user's profile information. it should make use of MongobDB
+
+//CODE
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+const app = express();
+
+// configure middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+// configure database connection
+const MONGODB_URI = 'mongodb://localhost:27017/mydb';
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+// define user profile schema
+const userProfileSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  email: { type: String, required: true },
+  phone: { type: String },
+  address: { type: String }
+});
+
+// define user profile model
+const UserProfile = mongoose.model('UserProfile', userProfileSchema);
+
+// define API route to fetch user profile
+app.get('/profile', async (req, res) => {
+  try {
+    // get user ID from request headers or query string
+    const userId = req.headers.userid || req.query.userid;
+
+    // find user profile in database
+    const userProfile = await UserProfile.findOne({ _id: userId });
+
+    // check if user profile exists
+    if (!userProfile) {
+      return res.status(404).json({ message: 'User profile not found' });
+    }
+
+    // return user profile
+    res.status(200).json(userProfile);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
+// start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+});
+```
+
