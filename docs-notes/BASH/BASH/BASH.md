@@ -1,5 +1,6 @@
 
-# BASH
+> # BASH
+---
 
 ## CREATE A SCRIPT
 - Iniciar con el shebang, es decir, indicar con qué programa o shell va a funcionar:
