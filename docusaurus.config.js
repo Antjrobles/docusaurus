@@ -80,7 +80,7 @@ const config = {
             label: "DAM",
           },
           {
-            to: '/docs-notes/intro',  
+            to: '/docs-notes/intro',
             position: 'left',
             label: 'DOCUMENTATION',
             activeBaseRegex: `/docs-notes/`,
@@ -100,6 +100,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['powershell', 'bash', 'shell', 'sh', 'git', 'md', 'html', 'docker'],
       },
     }),
   customFields: {
