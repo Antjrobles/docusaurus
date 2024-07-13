@@ -111,3 +111,18 @@ app.listen(PORT, () => {
 });
 ```
 
+## CONVERT CODE
+- You can convert code form one lenguaje to another., for example, Javascript to Typescript. Even convert from Bootstrap css to Tailwind.
+
+## EXPLAIN CODE & CODE REVIEWS
+- WE can ask ChatGPT to explain some code snippet or review our code.
+
+## CODE REFACTOR & FIND BUGS.
+- ChatGPT can refactor your code to make it more compact and readable.
+
+## WRITE UNIT TESTS
+```js
+Write a unit test for the below Javascript function using Jest as the testinf framework
+
+Write a list of test cases to manually test user registration in a web/mobile application
+```
