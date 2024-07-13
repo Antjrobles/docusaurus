@@ -9,6 +9,7 @@ sudo npm run start -- --port 8053 --host 192.168.0.52
 
 - To test server mode:  
 ``` shell
+npm run serve -- --port 8053 --host 192.168.0.32 
 ```
 
 
