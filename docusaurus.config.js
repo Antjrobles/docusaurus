@@ -106,6 +106,14 @@ const config = {
   customFields: {
     myEnv: process.env.REACT_APP_CLERK_PUBLISHABLE_API_KEY,
   },
+  // Añadir script de Umami
+  scripts: [
+    {
+      src: 'https://umami.antjrobles.tech/script.js',
+      defer: true,
+      'data-website-id': '5ddd3ca3-54da-4526-9e41-835b4bd706a2',
+    },
+  ],
 };
 
 module.exports = config;
