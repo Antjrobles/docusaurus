@@ -7,7 +7,7 @@ sidebar_position: 0
 
 
 
->1.	INTRODUCCIÓN
+> ## **1.	INTRODUCCIÓN**
 ¿A qué nos referimos cuando hablamos de acceso a datos en una aplicación informática?
 Podemos afirmar que en la inmensa mayoría de aplicaciones informáticas se pueden diferenciar, a grandes rasgos, en dos partes:
 	Por un lado, el programa propiamente dicho, que realiza las operaciones deseadas con los datos necesarios.
@@ -16,7 +16,8 @@ En la mayoría de los casos, cuando programamos, nos interesa que el programa gu
 Te habrás dado cuenta de que el almacenamiento en memoria RAM, mediante variables o vectores, es temporal, los datos se pierden cuando el programa termina. Quizás te habrá pasado alguna vez que, debido a un apagón eléctrico, has perdido el trabajo que estabas haciendo, que todavía no habías grabado. Los datos que se guardan en almacenamiento secundario, como ficheros o bases de datos, se denominan datos persistentes, porque existen, o persisten más allá de la ejecución de la aplicación.
 Ese almacenamiento secundario de datos que acabamos de mencionar, habitualmente suele consistir en una base de datos relacional, si bien, a veces, hay otros métodos de almacenamiento, y por tanto, métodos de acceso a esos datos. De conocer esos tipos de almacenamiento y cómo acceder a ellos es de lo que trata este módulo.
 En esta unidad inicial, vas a ver una panorámica de los diversos métodos de persistencia que encontraremos en el mercado.
-2.	ACCESO A DATOS
+
+>## 2.	ACCESO A DATOS
 Hay diversas estrategias de acceso a datos para gestionar la persistencia de los datos:
 	Mediante ficheros.
 	Bases de datos, que pueden ser:
@@ -37,11 +38,11 @@ Al principio, en los primeros tiempos de la informática, los datos se guardaban
 
 2.1.	QUE ESTRATEGIA O MÉTODO DE ACCESO A DATOS USAR
 
-3. FICHEROS
+>## 3. FICHEROS
 3.1 USO DE FICHEROS EN LA ACTUALIDAD
 
 
-4.BASE DE DATOS
+>## 4.BASE DE DATOS
 4.1. INTRODUCCIÓN
 4.2. BASE DE DATOS RELACIONALES
 4.3. BASE DE DATOS ORIENTADAS A OBJETOS (I)
@@ -50,19 +51,19 @@ Al principio, en los primeros tiempos de la informática, los datos se guardaban
 4.4.1. DESVENTAJAS DE LAS BASES DE DATOS ORIENTADAS A OBJETOS FRENTE A LAS RELACIONALES
 
 4.5 BASE DE DATOS OBJETO-RELACIONALES
-5. ACCESO A BASE DE DATOS MEDIANTE CONECTORES
+>## 5. ACCESO A BASE DE DATOS MEDIANTE CONECTORES
 
-6. MAPEO OBJETO RELACIONAL (ORM)
+>## 6. MAPEO OBJETO RELACIONAL (ORM)
 6.1. CAPA DE PERSISTENCIA Y FRAMEWORK DE MAPEO
 
-7. BASES DE DATOS XML
+>## 7. BASES DE DATOS XML
 
 
-8. DESARROLLO DE COMPONENTES
+>## 8. DESARROLLO DE COMPONENTES
 8.1. DEFINICIÓN DE COMPONENTE
 8.2. JAVABEANS
 
-9. HERRAMIENTAS DE TRABAJO NECESARIAS PARA EL MÓDULO
+>## 9. HERRAMIENTAS DE TRABAJO NECESARIAS PARA EL MÓDULO
 9.1. NETBEANS
 9.2. ECLIPSE
 9.3. PLUGIN DE HIBERNATE
