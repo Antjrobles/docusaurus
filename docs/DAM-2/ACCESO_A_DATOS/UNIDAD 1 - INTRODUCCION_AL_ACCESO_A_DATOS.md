@@ -4,11 +4,10 @@ sidebar_position: 0
 
 # UNIDAD 1 - INTRODUCCION AL ACCESO A DATOS
 
-TEMA 1. INTRODUCCIÓN A ACCESO A DATOS
 
 
 
-1.	INTRODUCCIÓN
+>1.	INTRODUCCIÓN
 ¿A qué nos referimos cuando hablamos de acceso a datos en una aplicación informática?
 Podemos afirmar que en la inmensa mayoría de aplicaciones informáticas se pueden diferenciar, a grandes rasgos, en dos partes:
 	Por un lado, el programa propiamente dicho, que realiza las operaciones deseadas con los datos necesarios.
