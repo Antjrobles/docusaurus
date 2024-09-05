@@ -103,9 +103,7 @@ const config = {
         additionalLanguages: ['powershell'],
       },
     }),
-  customFields: {
-    myEnv: process.env.REACT_APP_CLERK_PUBLISHABLE_API_KEY,
-  },
+
   // Añadir script de Umami
   scripts: [
     {

@@ -5,7 +5,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.css';
-import { ClerkProvider, SignedIn, SignedOut, UserButton, useUser, RedirectToSignIn } from '@clerk/clerk-react';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -29,15 +28,11 @@ function HomepageHeader() {
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <ClerkProvider publishableKey='pk_test_ZWFnZXItZmluY2gtMzkuY2xlcmsuYWNjb3VudHMuZGV2JA'>
       <Layout title={`Hello from ${siteConfig.title}`} description='Description will go into a meta tag in <head />'>
         <HomepageHeader />
         <main>
           <HomepageFeatures />
         </main>
       </Layout>
-    </ClerkProvider>
   );
 }
-
-//9E@fMbsC2kqMHi$T
