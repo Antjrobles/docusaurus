@@ -3,7 +3,7 @@
 
 - In development mode:
 ``` shell
-sudo npm run start -- --port 8053 --host 192.168.0.52
+sudo npm run start -- --port 8053 --host 192.168.0.32
 ```
 
 
